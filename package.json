@@ -1,0 +1,23 @@
+{
+  "name": "backend-nodejs",
+  "version": "0.0.1",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon node src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MinooTavakoli/backend-nodejs.git"
+  },
+  "author": "Minoo Tavakoli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MinooTavakoli/backend-nodejs/issues"
+  },
+  "homepage": "https://github.com/MinooTavakoli/backend-nodejs#readme",
+  "dependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
