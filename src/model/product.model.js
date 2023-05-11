@@ -11,8 +11,16 @@ async function findById(id) {
   });
 }
 
+async function create(product) {
+  return new Promise((res, rej) => {
+    products.push(product);
+    res();
+  });
+}
+
 const ProductModel = {
   find,
   findById,
+  create,
 };
 module.exports = ProductModel;
