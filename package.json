@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon node src/introduction/index.js"
+    "start": "nodemon node src/introduction/index.js",
+    "match": "nodemon node src/introduction/matched-route.js"
   },
   "repository": {
     "type": "git",
