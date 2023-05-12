@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon node src/introduction/index.js",
-    "match": "nodemon node src/introduction/matched-route.js"
+    "match": "nodemon node src/introduction/matched-route.js",
+    "query": "nodemon node src/introduction/query.js"
   },
   "repository": {
     "type": "git",
