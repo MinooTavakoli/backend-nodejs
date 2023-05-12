@@ -45,8 +45,18 @@ app.get("/users", function (req, res) {
   });
 });
 
-app.get("/products", function (req, res) {
-  res.statusCode = 200;
+app.get("/products/:id?", function (req, res) {
+  const { id } = req.params;
+  let product = null;
+  if (id) {
+    product = products.find((product) => product.id == id);
+    return res.send({
+      statusCode: res.statusCode,
+      data: {
+        product,
+      },
+    });
+  }
   res.json({
     products,
   });
@@ -73,6 +83,10 @@ app.get("/users/:id", (req, res) => {
   res.json({
     users,
   });
+});
+
+app.get("/stuff/:id/:username/:version/:stuffID", (req, res) => {
+  res.send(req.params);
 });
 
 app.listen(3000, () => {
